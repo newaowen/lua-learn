@@ -1,9 +1,7 @@
 lua-learn
 =========
 
-学习lua中实践的代码
-
-##特别的地方
+学习lua
 
 ###类型
 数字，字符串，表
@@ -20,6 +18,8 @@ lua-learn
 
 ###局部变量和作用块
 local, do..end块
+
+_ 虚变量,亚变量
 
 ###控制语句(条件和循环)
 + 条件
@@ -92,6 +92,21 @@ debug.traceback()
 无类似java的异常处理机制
 
 ##协程
+coroutin表
+状态：suspended, dead, running, normal
+coroutine.create
+coroutine.resume
+
+yield, 协程主动停止
+
+非抢占式的多线程
+
+大字符串拷贝优化
+
+##table
+table 天然的稀疏矩阵
+利用table可简便的实现链表，队列，图等基本数据结构
+
 
 ##特色
 多赋值语句如 a,b = 10,20, 可用来交换：x, y = y, x
